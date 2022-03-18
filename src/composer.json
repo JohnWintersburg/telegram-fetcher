@@ -1,0 +1,19 @@
+{
+    "name": "scandiweb/telegram-fetcher",
+    "description": "Fetches data from gmail and facebook and sends to telegram channel",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Vladimirs",
+            "email": "vladimirs.prokopovics@scandiweb.com"
+        }
+    ],
+    "require": {
+        "hirak/prestissimo": "^0.3.10",
+        "psr/log": "^1.1",
+        "longman/telegram-bot": "^0.75.0",
+        "laminas/laminas-router": "^3.5",
+        "laminas/laminas-mvc": "^3.3",
+        "phpexperts/dockerize": "^7.2"
+    }
+}
