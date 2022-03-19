@@ -7,7 +7,7 @@ services:
             - "8080:80"
         volumes:
             - ./src:/src
-            - ./nginx.conf:/etc/nginx/conf.d/default.conf
+            - ./conf/nginx.conf:/etc/nginx/conf.d/default.conf
         networks:
             - src-network
     php:
@@ -16,7 +16,10 @@ services:
             - ./src:/src
         networks:
             - src-network
-
+    #composer:
+        #image: composer:1.9
+        #volumes:
+            #- ./src:/src
 networks:
     src-network:
         driver: bridge
